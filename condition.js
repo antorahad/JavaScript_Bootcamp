@@ -33,3 +33,31 @@ else{
 
 //Multistage condition
 
+var money = 19;
+
+var danis = 45;
+
+var butter = 35;
+
+var toast = 20;
+
+
+if (danis < money){
+    console.log('mama danis den');
+}
+
+else if (butter < money){
+    console.log('dao butter dao');
+}
+
+else if (toast < money){
+    console.log('de toast de');
+}
+
+else{
+    console.log('maire bap baki te cha biri khamu aijka')
+}
+
+
+
+//
