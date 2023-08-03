@@ -87,3 +87,85 @@ for(var i = 0; i < bookPrice.length; i++){
 
     console.log(price);
 } // (Solved)
+
+
+//Write a function called foo() which prints "foo" and a function called bar() which prints "bar". call bar() inside foo() after printing.
+
+function foo(){
+    console.log("foo");
+}
+
+function bar(){
+    console.log("bar");
+}
+
+foo(bar()); // (Solved) output - barfoo
+
+
+
+// write a function called make_avg() which will take three integers and return the average of those value
+
+function make_avg(num1, num2, num3){
+    var totalNum = num1 + num2 + num3 / 3;
+    return totalNum;
+}
+
+var avg = make_avg(20,10,50);
+
+console.log(avg); // (Solved) 
+
+// write a function called make_avg which will take integer as an array and show the avrg and size of that array
+
+function made_avg(){
+    var numItem = [10, 12, 14, 16, 18, 20]; 
+
+    var arrAverage = numItem.reduce((a, b) => a + b, 0) / numItem.length;
+    
+    console.log('The size of array is:' + ' ' + numItem.length);
+    console.log('The avg of the array is:' + ' ' + arrAverage);
+}
+
+var outPut =  made_avg();
+
+console.log(outPut); // (Solved)
+
+
+
+// make a function that will check if the number is odd or even
+
+function oddEvenChecker(integer){
+    
+    if(integer % 2 == 0){
+        console.log(integer + ' ' + 'is an even number');
+    }
+
+    else if(integer % 2 !== 0){
+        console.log(integer + ' ' + 'is an odd number');
+    }
+}
+
+
+oddEvenChecker(15);
+
+oddEvenChecker(17);
+
+// switch problem
+
+const color = 'green';
+
+switch(color){
+    case 'green':
+        console.log('Cross the road');
+        break;
+
+    case 'yellow':
+        console.log('Wait for a min');
+        break;
+        
+    case 'red':
+        console.log('Please, stop here for a min');
+        break;
+
+    default: 
+        console.log('Munni k lagabo aj rate bangla hete')    
+}
